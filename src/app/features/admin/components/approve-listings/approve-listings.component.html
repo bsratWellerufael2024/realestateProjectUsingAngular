@@ -1,0 +1,105 @@
+<div class="container mx-auto px-4 py-6 space-y-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-900">Approve Listings</h1>
+        <div class="flex gap-4">
+            <button [disabled]="!hasSelectedListings"
+                    (click)="approveSelected()"
+                    class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed">
+                Approve Selected
+            </button>
+            <button [disabled]="!hasSelectedListings"
+                    (click)="rejectSelected()"
+                    class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed">
+                Reject Selected
+            </button>
+        </div>
+    </div>
+
+    <!-- Search and Filter Section -->
+    <div class="bg-white p-4 rounded-lg shadow">
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="flex-1">
+                <input type="text"
+                       [(ngModel)]="searchTerm"
+                       placeholder="Search listings..."
+                       class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <select [(ngModel)]="selectedPropertyType"
+                        class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="">All Property Types</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="condo">Condo</option>
+                    <option value="land">Land</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Listings Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Individual Listing Card -->
+        <div *ngFor="let listing of filteredListings" 
+             class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img [src]="listing.imageUrl" 
+                 [alt]="listing.title" 
+                 class="w-full h-48 object-cover">
+            <div class="p-4">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">{{ listing.title }}</h3>
+                        <p class="text-gray-600">{{ listing.address }}</p>
+                    </div>
+                    <input type="checkbox" 
+                           [checked]="listing.selected"
+                           (change)="toggleSelection(listing)"
+                           class="h-5 w-5 text-blue-600">
+                </div>
+                <div class="mt-4">
+                    <p class="text-gray-700">${{ listing.price.toLocaleString() }}</p>
+                    <p class="text-sm text-gray-500 mt-2">Posted by: {{ listing.postedBy }}</p>
+                    <p class="text-sm text-gray-500">Date: {{ listing.postedDate | date:'yyyy-MM-dd' }}</p>
+                </div>
+                <div class="mt-4 flex gap-2">
+                    <button (click)="approveListing(listing.id)"
+                            class="flex-1 px-4 py-2 bg-green-100 text-green-700 rounded hover:bg-green-200">
+                        Approve
+                    </button>
+                    <button (click)="rejectListing(listing.id)"
+                            class="flex-1 px-4 py-2 bg-red-100 text-red-700 rounded hover:bg-red-200">
+                        Reject
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empty State -->
+    <div *ngIf="filteredListings.length === 0" 
+         class="text-center py-12 bg-white rounded-lg shadow">
+        <p class="text-gray-500">No pending listings found</p>
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex justify-center mt-8">
+        <nav class="flex items-center gap-2">
+            <button (click)="previousPage()" 
+                    [disabled]="currentPage === 1"
+                    class="px-3 py-1 rounded-lg border hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed">&lt;</button>
+            
+            <button *ngFor="let page of pages" 
+                    (click)="setPage(page)"
+                    [class.bg-blue-600]="currentPage === page"
+                    [class.text-white]="currentPage === page"
+                    class="px-3 py-1 rounded-lg border hover:bg-gray-100">
+                {{ page }}
+            </button>
+            
+            <button (click)="nextPage()"
+                    [disabled]="currentPage === totalPages"
+                    class="px-3 py-1 rounded-lg border hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed">&gt;</button>
+        </nav>
+    </div>
+</div>

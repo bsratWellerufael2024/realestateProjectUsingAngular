@@ -1,0 +1,31 @@
+<div class="min-h-screen bg-gray-100">
+    <!-- Sidebar -->
+    <aside class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg">
+        <div class="flex items-center justify-center h-16 border-b">
+            <h1 class="text-xl font-bold text-gray-800">Admin Panel</h1>
+        </div>
+        <nav class="mt-6">
+            <div class="px-4 space-y-3">
+                <a routerLink="/admin/dashboard" routerLinkActive="bg-gray-100" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <span class="ml-3">Dashboard</span>
+                </a>
+                <a routerLink="/admin/users" routerLinkActive="bg-gray-100" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <span class="ml-3">Users</span>
+                </a>
+                <a routerLink="/admin/approve" routerLinkActive="bg-gray-100" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <span class="ml-3">Approve Listings</span>
+                </a>
+                <a routerLink="/admin/manage" routerLinkActive="bg-gray-100" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <span class="ml-3">Manage Inquiries</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-64 p-8">
+        <div class="container mx-auto">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+</div>
