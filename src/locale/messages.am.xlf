@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7500504048505558866" datatype="html">
+        <source>Welcome to our site</source>
+        <target>እንኳን ደህና መጡ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/components/header/header.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="138410146277581869" datatype="html">
+        <source>This is our awesome real estate platform</source>
+        <target>ይህ የእኛ አስደናቂ የንብረት መድረክ ነው</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/components/header/header.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <note priority="1" from="description">site description</note>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <target>ቤት</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/components/header/header.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8721861281513890587" datatype="html">
+        <source>Properties</source>
+        <target>ንብረቶች</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/components/header/header.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6729916752786542046" datatype="html">
+        <source>Agents</source>
+        <target>ወኪሎች</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/components/header/header.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <target>ስለ እኛ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/components/header/header.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5041354590769758251" datatype="html">
+        <source>Admin</source>
+        <target>አስተዳዳሪ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/components/header/header.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -4,6 +4,17 @@
   "newProjectRoot": "projects",
   "projects": {
     "project-realestate": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf"
+          },
+          "am": {
+            "translation": "src/locale/messages.am.xlf"
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": true,
             "outputPath": "dist/project-realestate",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -30,7 +42,9 @@
             "scripts": []
           },
           "configurations": {
+
             "production": {
+              "localize": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -45,6 +59,15 @@
               ],
               "outputHashing": "all"
             },
+            "fr": {
+              "localize": ["fr"],
+               "outputPath": "dist/project-realestate-fr/"
+             },
+             "am": {
+              "localize": ["am"],
+               "outputPath": "dist/project-realestate-am/"
+             },
+             
             "development": {
               "optimization": false,
               "extractLicenses": false,
@@ -59,6 +82,15 @@
             "production": {
               "buildTarget": "project-realestate:build:production"
             },
+            "es": {
+              "buildTarget": "project-realestate:build:es"
+            },
+            "fr": {
+              "buildTarget": "project-realestate:build:fr"
+            },
+            "am": {
+              "buildTarget": "project-realestate:build:am"
+            },
             "development": {
               "buildTarget": "project-realestate:build:development"
             }
@@ -70,6 +102,7 @@
           "options": {
             "buildTarget": "project-realestate:build"
           }
+          
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
