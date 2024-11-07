@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SharedLayoutComponent } from './shared-layout.component';
+import { PropertiesComponent } from './properties.component';
 
-describe('SharedLayoutComponent', () => {
-  let component: SharedLayoutComponent;
-  let fixture: ComponentFixture<SharedLayoutComponent>;
+describe('PropertiesComponent', () => {
+  let component: PropertiesComponent;
+  let fixture: ComponentFixture<PropertiesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SharedLayoutComponent]
+      imports: [PropertiesComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SharedLayoutComponent);
+    fixture = TestBed.createComponent(PropertiesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
