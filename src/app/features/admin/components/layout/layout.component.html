@@ -1,31 +1,56 @@
-<div class="min-h-screen bg-gray-100">
-    <!-- Sidebar -->
-    <aside class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg">
-        <div class="flex items-center justify-center h-16 border-b">
-            <h1 class="text-xl font-bold text-gray-800">Admin Panel</h1>
-        </div>
-        <nav class="mt-6">
-            <div class="px-4 space-y-3">
-                <a routerLink="/admin/dashboard" routerLinkActive="bg-gray-100" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
-                    <span class="ml-3">Dashboard</span>
-                </a>
-                <a routerLink="/admin/users" routerLinkActive="bg-gray-100" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
-                    <span class="ml-3">Users</span>
-                </a>
-                <a routerLink="/admin/approve" routerLinkActive="bg-gray-100" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
-                    <span class="ml-3">Approve Listings</span>
-                </a>
-                <a routerLink="/admin/manage" routerLinkActive="bg-gray-100" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">
-                    <span class="ml-3">Manage Inquiries</span>
-                </a>
-            </div>
-        </nav>
-    </aside>
+<div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+  <app-admin-header></app-admin-header>
 
-    <!-- Main Content -->
-    <main class="ml-64 p-8">
-        <div class="container mx-auto">
-            <router-outlet></router-outlet>
-        </div>
-    </main>
+  <!-- Sidebar -->
+  <aside
+    class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-gray-800 shadow-lg"
+    style="top: 64px"
+  >
+    <div
+      class="flex items-center justify-center h-16 border-b dark:border-gray-700"
+    >
+      <h1 class="text-xl font-bold text-gray-800 dark:text-white">
+        Admin Panel
+      </h1>
+    </div>
+    <nav class="mt-6">
+      <div class="px-4 space-y-3">
+        <a
+          routerLink="/admin/dashboard"
+          routerLinkActive="bg-gray-100 dark:bg-gray-700"
+          class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+        >
+          <span class="ml-3">Dashboard</span>
+        </a>
+        <a
+          routerLink="/admin/users"
+          routerLinkActive="bg-gray-100 dark:bg-gray-700"
+          class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+        >
+          <span class="ml-3">Users</span>
+        </a>
+        <a
+          routerLink="/admin/approve"
+          routerLinkActive="bg-gray-100 dark:bg-gray-700"
+          class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+        >
+          <span class="ml-3">Approve Listings</span>
+        </a>
+        <a
+          routerLink="/admin/manage"
+          routerLinkActive="bg-gray-100 dark:bg-gray-700"
+          class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+        >
+          <span class="ml-3">Manage Inquiries</span>
+        </a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="ml-64 pt-16">
+    <div class="container mx-auto p-8">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
 </div>

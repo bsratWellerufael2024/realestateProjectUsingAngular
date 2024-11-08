@@ -1,5 +1,5 @@
 <section
-  class="relative h-[700px] flex items-center justify-center overflow-hidden"
+  class="relative h-[700px] flex items-center justify-center overflow-hidden dark:bg-gray-900"
 >
   <!-- Background Image with Parallax Effect -->
   <div class="absolute inset-0 scale-105 transform transition duration-1000">
@@ -9,25 +9,31 @@
       class="w-full h-full object-cover animate-ken-burns"
     />
     <div
-      class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40"
+      class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40 dark:from-black/80 dark:to-black/50"
     ></div>
   </div>
 
   <!-- Content -->
-  <div class="relative container mx-auto px-6 text-center text-white">
-    <h1 class="text-6xl font-bold mb-6 animate-fade-in-up">
+  <div
+    class="relative container mx-auto px-6 text-center text-white dark:text-gray-100"
+  >
+    <h1 class="text-6xl font-bold mb-6 animate-fade-in-up dark:text-white">
       Discover Your Perfect Home
     </h1>
-    <p class="text-2xl mb-12 font-light animate-fade-in-up delay-200">
+    <p
+      class="text-2xl mb-12 font-light animate-fade-in-up delay-200 dark:text-gray-200"
+    >
       Luxury Living Redefined | Premium Properties | Exceptional Service
     </p>
 
     <!-- Enhanced Search Form -->
-    <div class="bg-white/95 p-8 rounded-2xl shadow-2xl max-w-5xl mx-auto">
+    <div
+      class="bg-white/95 dark:bg-gray-800/95 p-8 rounded-2xl shadow-2xl max-w-5xl mx-auto"
+    >
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div class="relative group">
           <select
-            class="w-full px-5 py-4 rounded-lg border-2 border-gray-200 text-gray-700 focus:outline-none focus:border-blue-500 transition duration-300 appearance-none cursor-pointer hover:border-blue-300 bg-white"
+            class="w-full px-5 py-4 rounded-lg border-2 border-gray-200 text-gray-700 focus:outline-none focus:border-blue-500 transition duration-300 appearance-none cursor-pointer hover:border-blue-300 bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:hover:border-blue-400"
           >
             <option value="">Property Type</option>
             <option value="luxury-house">Luxury House</option>
@@ -38,7 +44,7 @@
         </div>
         <div class="relative group">
           <select
-            class="w-full px-5 py-4 rounded-lg border-2 border-gray-200 text-gray-700 focus:outline-none focus:border-blue-500 transition duration-300 appearance-none cursor-pointer hover:border-blue-300 bg-white"
+            class="w-full px-5 py-4 rounded-lg border-2 border-gray-200 text-gray-700 focus:outline-none focus:border-blue-500 transition duration-300 appearance-none cursor-pointer hover:border-blue-300 bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:hover:border-blue-400"
           >
             <option value="">Location</option>
             <option value="beverly-hills">Beverly Hills</option>
@@ -49,7 +55,7 @@
         </div>
         <div class="relative group">
           <select
-            class="w-full px-5 py-4 rounded-lg border-2 border-gray-200 text-gray-700 focus:outline-none focus:border-blue-500 transition duration-300 appearance-none cursor-pointer hover:border-blue-300 bg-white"
+            class="w-full px-5 py-4 rounded-lg border-2 border-gray-200 text-gray-700 focus:outline-none focus:border-blue-500 transition duration-300 appearance-none cursor-pointer hover:border-blue-300 bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:hover:border-blue-400"
           >
             <option value="">Price Range</option>
             <option value="1m-3m">$1M - $3M</option>
@@ -59,7 +65,7 @@
           </select>
         </div>
         <button
-          class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl font-semibold"
+          class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl font-semibold dark:bg-blue-700 dark:hover:bg-blue-800"
         >
           Find Properties
         </button>
@@ -72,31 +78,31 @@
         class="text-center transform hover:scale-105 transition duration-300"
       >
         <h3
-          class="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"
+          class="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent dark:from-blue-300 dark:to-blue-500"
         >
           2500+
         </h3>
-        <p class="text-xl font-light">Luxury Properties</p>
+        <p class="text-xl font-light dark:text-gray-200">Luxury Properties</p>
       </div>
       <div
         class="text-center transform hover:scale-105 transition duration-300"
       >
         <h3
-          class="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"
+          class="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent dark:from-blue-300 dark:to-blue-500"
         >
           1200+
         </h3>
-        <p class="text-xl font-light">Satisfied Clients</p>
+        <p class="text-xl font-light dark:text-gray-200">Satisfied Clients</p>
       </div>
       <div
         class="text-center transform hover:scale-105 transition duration-300"
       >
         <h3
-          class="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"
+          class="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent dark:from-blue-300 dark:to-blue-500"
         >
           100+
         </h3>
-        <p class="text-xl font-light">Elite Agents</p>
+        <p class="text-xl font-light dark:text-gray-200">Elite Agents</p>
       </div>
     </div>
   </div>
