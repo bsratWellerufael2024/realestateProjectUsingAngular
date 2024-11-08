@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, effect, HostBinding, signal } from '@angular/core';
-import { ThemeService } from '../../../core/service/theme.service';
 import { RouterModule } from '@angular/router';
+import { ThemeService } from '../../../../core/service/theme.service';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-admin-header',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+  templateUrl: './admin-header.component.html',
+  styleUrl: './admin-header.component.css',
 })
-export class HeaderComponent {
+export class AdminHeaderComponent {
   constructor(public themeService: ThemeService) {}
   // darkMode = signal<boolean>(
   //   JSON.parse(window.localStorage.getItem('darkMode') ?? 'false')

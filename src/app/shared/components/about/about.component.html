@@ -7,13 +7,13 @@
       class="w-full h-64 object-cover rounded-xl mb-8"
     />
     <h1
-      class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 animate-slide-up"
+      class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 animate-slide-up"
       i18n
     >
       About RealEstate
     </h1>
     <p
-      class="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-up delay-100"
+      class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto animate-slide-up delay-100"
       i18n
     >
       Your trusted partner in finding the perfect property since 2010
@@ -22,7 +22,7 @@
 
   <!-- Mission Statement -->
   <div
-    class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 mb-16 transform hover:scale-105 transition-all duration-300"
+    class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900 dark:to-indigo-900 rounded-xl p-8 mb-16 transform hover:scale-105 transition-all duration-300"
   >
     <div class="max-w-4xl mx-auto text-center">
       <img
@@ -31,13 +31,13 @@
         class="w-32 h-32 mx-auto mb-6 rounded-full object-cover"
       />
       <h2
-        class="text-3xl font-semibold text-gray-900 mb-6 animate-fade-in"
+        class="text-3xl font-semibold text-gray-900 dark:text-white mb-6 animate-fade-in"
         i18n
       >
         Our Mission
       </h2>
       <p
-        class="text-lg text-gray-700 leading-relaxed animate-fade-in delay-100"
+        class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed animate-fade-in delay-100"
         i18n
       >
         We are dedicated to providing exceptional real estate services by
@@ -53,11 +53,11 @@
       class="text-center transform hover:scale-105 transition-all duration-300"
     >
       <div
-        class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+        class="bg-blue-100 dark:bg-blue-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-8 text-blue-600"
+          class="h-8 w-8 text-blue-600 dark:text-blue-300"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -70,8 +70,10 @@
           />
         </svg>
       </div>
-      <h3 class="text-xl font-semibold mb-2" i18n>Extensive Portfolio</h3>
-      <p class="text-gray-600" i18n>
+      <h3 class="text-xl font-semibold mb-2 dark:text-white" i18n>
+        Extensive Portfolio
+      </h3>
+      <p class="text-gray-600 dark:text-gray-300" i18n>
         Access to thousands of premium properties across the country
       </p>
     </div>
@@ -80,11 +82,11 @@
       class="text-center transform hover:scale-105 transition-all duration-300"
     >
       <div
-        class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+        class="bg-blue-100 dark:bg-blue-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-8 text-blue-600"
+          class="h-8 w-8 text-blue-600 dark:text-blue-300"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -97,8 +99,10 @@
           />
         </svg>
       </div>
-      <h3 class="text-xl font-semibold mb-2" i18n>Expert Agents</h3>
-      <p class="text-gray-600" i18n>
+      <h3 class="text-xl font-semibold mb-2 dark:text-white" i18n>
+        Expert Agents
+      </h3>
+      <p class="text-gray-600 dark:text-gray-300" i18n>
         Professional and experienced real estate agents at your service
       </p>
     </div>
@@ -107,11 +111,11 @@
       class="text-center transform hover:scale-105 transition-all duration-300"
     >
       <div
-        class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+        class="bg-blue-100 dark:bg-blue-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-8 text-blue-600"
+          class="h-8 w-8 text-blue-600 dark:text-blue-300"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -124,8 +128,10 @@
           />
         </svg>
       </div>
-      <h3 class="text-xl font-semibold mb-2" i18n>Trusted Service</h3>
-      <p class="text-gray-600" i18n>
+      <h3 class="text-xl font-semibold mb-2 dark:text-white" i18n>
+        Trusted Service
+      </h3>
+      <p class="text-gray-600 dark:text-gray-300" i18n>
         Over a decade of excellence in real estate services
       </p>
     </div>
@@ -133,7 +139,7 @@
 
   <!-- Statistics -->
   <div
-    class="bg-white shadow-lg rounded-xl p-8 mb-16 transform hover:scale-105 transition-all duration-300"
+    class="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 mb-16 transform hover:scale-105 transition-all duration-300"
   >
     <div class="grid md:grid-cols-4 gap-8 text-center">
       <div class="animate-fade-in">
@@ -142,10 +148,12 @@
           alt="Properties Sold"
           class="w-16 h-16 mx-auto mb-4 rounded-full object-cover"
         />
-        <h4 class="text-4xl font-bold text-blue-600 mb-2 animate-count-up">
+        <h4
+          class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2 animate-count-up"
+        >
           1000+
         </h4>
-        <p class="text-gray-600" i18n>Properties Sold</p>
+        <p class="text-gray-600 dark:text-gray-300" i18n>Properties Sold</p>
       </div>
       <div class="animate-fade-in delay-100">
         <img
@@ -153,10 +161,12 @@
           alt="Happy Clients"
           class="w-16 h-16 mx-auto mb-4 rounded-full object-cover"
         />
-        <h4 class="text-4xl font-bold text-blue-600 mb-2 animate-count-up">
+        <h4
+          class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2 animate-count-up"
+        >
           500+
         </h4>
-        <p class="text-gray-600" i18n>Happy Clients</p>
+        <p class="text-gray-600 dark:text-gray-300" i18n>Happy Clients</p>
       </div>
       <div class="animate-fade-in delay-200">
         <img
@@ -164,10 +174,12 @@
           alt="Expert Agents"
           class="w-16 h-16 mx-auto mb-4 rounded-full object-cover"
         />
-        <h4 class="text-4xl font-bold text-blue-600 mb-2 animate-count-up">
+        <h4
+          class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2 animate-count-up"
+        >
           50+
         </h4>
-        <p class="text-gray-600" i18n>Expert Agents</p>
+        <p class="text-gray-600 dark:text-gray-300" i18n>Expert Agents</p>
       </div>
       <div class="animate-fade-in delay-300">
         <img
@@ -175,17 +187,22 @@
           alt="Years Experience"
           class="w-16 h-16 mx-auto mb-4 rounded-full object-cover"
         />
-        <h4 class="text-4xl font-bold text-blue-600 mb-2 animate-count-up">
+        <h4
+          class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2 animate-count-up"
+        >
           13
         </h4>
-        <p class="text-gray-600" i18n>Years Experience</p>
+        <p class="text-gray-600 dark:text-gray-300" i18n>Years Experience</p>
       </div>
     </div>
   </div>
 
   <!-- Team Section -->
   <div class="text-center mb-16">
-    <h2 class="text-3xl font-semibold text-gray-900 mb-12 animate-fade-in" i18n>
+    <h2
+      class="text-3xl font-semibold text-gray-900 dark:text-white mb-12 animate-fade-in"
+      i18n
+    >
       Our Leadership Team
     </h2>
     <div class="grid md:grid-cols-3 gap-12">
@@ -195,8 +212,10 @@
           alt="John Smith - CEO"
           class="w-48 h-48 rounded-full mx-auto mb-4 object-cover hover:shadow-xl transition-shadow duration-300"
         />
-        <h3 class="text-xl font-semibold mb-2">John Smith</h3>
-        <p class="text-gray-600 mb-2" i18n>Chief Executive Officer</p>
+        <h3 class="text-xl font-semibold mb-2 dark:text-white">John Smith</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2" i18n>
+          Chief Executive Officer
+        </p>
       </div>
       <div class="transform hover:scale-105 transition-all duration-300">
         <img
@@ -204,8 +223,12 @@
           alt="Sarah Johnson - COO"
           class="w-48 h-48 rounded-full mx-auto mb-4 object-cover hover:shadow-xl transition-shadow duration-300"
         />
-        <h3 class="text-xl font-semibold mb-2">Sarah Johnson</h3>
-        <p class="text-gray-600 mb-2" i18n>Chief Operations Officer</p>
+        <h3 class="text-xl font-semibold mb-2 dark:text-white">
+          Sarah Johnson
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2" i18n>
+          Chief Operations Officer
+        </p>
       </div>
       <div class="transform hover:scale-105 transition-all duration-300">
         <img
@@ -213,15 +236,17 @@
           alt="Michael Brown - Sales Director"
           class="w-48 h-48 rounded-full mx-auto mb-4 object-cover hover:shadow-xl transition-shadow duration-300"
         />
-        <h3 class="text-xl font-semibold mb-2">Michael Brown</h3>
-        <p class="text-gray-600 mb-2" i18n>Sales Director</p>
+        <h3 class="text-xl font-semibold mb-2 dark:text-white">
+          Michael Brown
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2" i18n>Sales Director</p>
       </div>
     </div>
   </div>
 
   <!-- Contact CTA -->
   <div
-    class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-12 text-center transform hover:scale-105 transition-all duration-300"
+    class="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-800 dark:to-indigo-800 rounded-xl p-12 text-center transform hover:scale-105 transition-all duration-300"
   >
     <img
       src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
@@ -236,7 +261,7 @@
       estate journey. We're here to help you every step of the way.
     </p>
     <button
-      class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 transform hover:scale-110 animate-bounce"
+      class="bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 transition duration-300 transform hover:scale-110 animate-bounce"
       i18n
     >
       Contact Us
