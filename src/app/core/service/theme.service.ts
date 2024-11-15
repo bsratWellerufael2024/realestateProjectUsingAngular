@@ -5,7 +5,7 @@ import { Injectable, signal, effect } from '@angular/core';
 })
 export class ThemeService {
   darkMode = signal<boolean>(
-    localStorage.getItem('darkMode') === 'true' ||
+    localStorage.getItem('darkMode') === 'true' ??
       window.matchMedia('(prefers-color-scheme: dark)').matches
   );
 
@@ -14,14 +14,14 @@ export class ThemeService {
     window
       .matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change', (e) => {
-        if (!localStorage.getItem('userPreference')) {
+        // Only update theme if no user preference is saved
+        if (!localStorage.getItem('darkMode')) {
           this.darkMode.set(e.matches);
         }
       });
 
     effect(() => {
       // Store theme preference in localStorage
-      localStorage.setItem('userPreference', 'true');
       localStorage.setItem('darkMode', this.darkMode().toString());
 
       if (this.darkMode()) {

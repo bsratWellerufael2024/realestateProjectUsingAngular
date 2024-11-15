@@ -1,0 +1,40 @@
+{
+  "homeBannerHeader": {
+    "title": "Découvrez votre maison parfaite",
+    "description": "La vie de luxe redéfinie | Propriétés haut de gamme | Service exceptionnel",
+    "propertyType": "Type de propriété",
+    "luxuryHouse": "Maison de luxe",
+    "penthouse": "Penthouse",
+    "villa": "Villa",
+    "mansion": "Manoir",
+    "location": "Emplacement",
+    "beverlyHills": "Beverly Hills",
+    "manhattan": "Manhattan",
+    "miamiBeach": "Miami Beach",
+    "hamptons": "Hamptons",
+    "priceRange": "Fourchette de prix",
+    "oneMThreeM": "1M $ - 3M $",
+    "threeMFiveM": "3M $ - 5M $",
+    "fiveMTenM": "5M $ - 10M $",
+    "tenMPlus": "10M $+",
+    "findProperties": "Rechercher des propriétés",
+    "luxuryProperties": "Propriétés de luxe",
+    "satisfiedClients": "1200+",
+    "eliteAgents": "100+"
+  },
+  "headerHome": {
+    "logo": "Immobilier",
+    "home": "Accueil",
+    "properties": "Propriétés",
+    "agents": "Agents",
+    "about": "À propos",
+    "admin": "Admin",
+    "contact": "",
+    "login": "Connexion",
+    "signup": "S'inscrire",
+    "selectLang": "Sélectionner la langue",
+    "english": "English",
+    "french": "French",
+    "amharic": "አማርኛ"
+  }
+}
