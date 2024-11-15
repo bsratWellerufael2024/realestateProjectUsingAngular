@@ -1,0 +1,40 @@
+{
+  "homeBannerHeader": {
+    "title": "ፍጹም ቤትዎን ያግኙ",
+    "description": "የቅንጦት መኖር እንደገና ተብራርቷል | ፕሪሚየም ንብረቶች | ልዩ አገልግሎት",
+    "propertyType": "የንብረት አይነት",
+    "luxuryHouse": "ውስጥ የእንግዳ ቤት",
+    "penthouse": "ግንብ ቤት",
+    "villa": "ቪላ",
+    "mansion": "ማንሽን",
+    "location": "አካባቢ",
+    "beverlyHills": "ቤቨሪሊ አልባቦች",
+    "manhattan": "ማንሃተን",
+    "miamiBeach": "ማያሚ ባህር",
+    "hamptons": "ሃምፕቶንስ",
+    "priceRange": "የዋጋ ክልል",
+    "oneMThreeM": "$1M - $3M",
+    "threeMFiveM": "$3M - $5M",
+    "fiveMTenM": "$5M - $10M",
+    "tenMPlus": "$10M+",
+    "findProperties": "ንብረቶችን ፈልግ",
+    "luxuryProperties": "የቆዳ ንብረቶች",
+    "satisfiedClients": "1200+",
+    "eliteAgents": "100+"
+  },
+  "headerHome": {
+    "logo": "ንብረት አገልግሎት",
+    "home": "መነሻ",
+    "properties": "ንብረቶች",
+    "agents": "ወኪሎች",
+    "about": "ስለ",
+    "admin": "አስተዳዳሪ",
+    "contact": "መመዝ",
+    "login": "ግባ",
+    "signup": "መመዝገብ",
+    "selectLang": "ቋንቋ መግለጫ",
+    "english": "English",
+    "french": "French",
+    "amharic": "አማርኛ"
+  }
+}

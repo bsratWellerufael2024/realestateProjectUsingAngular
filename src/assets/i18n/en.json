@@ -1,0 +1,50 @@
+{
+  "homeBannerHeader": {
+    "title": "Discover Your Perfect Home",
+    "description": "Luxury Living Redefined | Premium Properties | Exceptional Service",
+    "propertyType": "Property Type",
+    "luxuryHouse": "Luxury House",
+    "penthouse": "Penthouse",
+    "villa": "Villa",
+    "mansion": "Mansion",
+    "location": "Location",
+    "beverlyHills": "Beverly Hills",
+    "manhattan": "Manhattan",
+    "miamiBeach": "Miami Beach",
+    "hamptons": "Hamptons",
+    "priceRange": "Price Range",
+    "oneMThreeM": "$1M - $3M",
+    "threeMFiveM": "$3M - $5M",
+    "fiveMTenM": "$5M - $10M",
+    "tenMPlus": "$10M+",
+    "findProperties": "Find Properties",
+    "luxuryProperties": "Luxury Properties",
+    "satisfiedClients": "1200+",
+    "eliteAgents": "100+"
+  },
+  "homeLayout": {
+    "findYourDreamHome": "Find Your Dream Home",
+    "discoverThePerfectProperty": "Discover the perfect property that matches your lifestyle",
+    "propertiesAvailable": "Properties Available",
+    "startExploring": "Start Exploring",
+    "featuredProperties": "Featured Properties",
+    "featured": "Featured",
+    "luxuryVilla": "Luxury Villa",
+    "startingFrom": "Starting from"
+  },
+  "headerHome": {
+    "logo": "Real Estate",
+    "home": "Home",
+    "properties": "Properties",
+    "agents": "Agents",
+    "about": "About",
+    "admin": "Admin",
+    "contact": "Contact",
+    "login": "Login",
+    "signup": "Signup",
+    "selectLang": "Select Language",
+    "english": "English",
+    "french": "French",
+    "amharic": "አማርኛ"
+  }
+}
